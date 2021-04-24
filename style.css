@@ -1,0 +1,113 @@
+body {
+  background-image: url("./images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 72px;
+}
+
+/*Button*/
+
+.btn-box {
+  text-align: center;
+}
+
+button {
+  font-weight: bold;
+  font-size: 20px;
+  border: solid rgb(0, 0, 0) 3px;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background-color: rgb(230, 235, 235);
+  transition: 0.8s;
+}
+
+button:active {
+  transform: translateY(6px);
+  transition: 0.3s;
+}
+
+.start-btn {
+  background-color: rgb(188, 247, 247);
+  margin-right: 15px;
+}
+
+.restart-btn {
+  background-color: rgb(248, 155, 155);
+}
+
+/*input*/
+
+.instruction {
+  background-color: rgb(82, 78, 78);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  width: 500px;
+}
+
+.hide {
+  display:none;
+}
+
+.show-user-input-box {
+  margin-top: 30px;
+  text-align: center;
+  transition: 1s;
+}
+
+.user-input {
+  font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.attempt {
+  background-color: rgb(197, 40, 40);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  width: 500px;
+}
+
+/* user guess */
+
+.user-guess {
+  background-color: rgb(197, 194, 40);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  width: 500px;
+}
+
+.user-hit-answer {
+  background-color: rgb(40, 197, 66);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  width: 500px;
+}
