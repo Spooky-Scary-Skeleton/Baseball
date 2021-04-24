@@ -75,6 +75,7 @@ function compareNumber() {
 function handleUserInput(event) {
   if (event.key === "Enter" && attemptCount > 0 && answerHit === false) {
     userGuess = userInput.value;
+    userInput.value = ""
     if (userGuess.length !== 3) {
       alert("Please enter 3 digit number.");
       return;
@@ -83,10 +84,9 @@ function handleUserInput(event) {
     attemptCount -= 1;
     console.log(attemptCount);
     attemptLeft.innerText = `attempt left: ${attemptCount}`;
-    userInput.value = ""
   } else if (event.key === "Enter" && attemptCount <= 0) {
     alert("No more attempt left. Please Restart the Game.")
-    userInput.value = ""
+
   } else if (event.key === "Enter" && answerHit === true) {
     alert("You've already hit the answer. Click RESTART to play again.")
   }
